@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<div class="login-container">
+    <h2>Giriş Yap</h2>
+    <form action="/auth/login" method="POST">
+        <input type="email" name="email" class="form-control" placeholder="E-posta Adresiniz" required>
+        <input type="password" name="password" class="form-control" placeholder="Şifre" required>
+        <button type="submit" class="btn">Giriş Yap</button>
+    </form>
+</div>
+
+<%- include("partials/footer") %>
